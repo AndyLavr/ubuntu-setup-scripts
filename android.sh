@@ -25,15 +25,15 @@ echo "Symlinking libGL.so...";
 sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so;
 
 # Make sure we're ready for installing repo
-cd ~/ && rm -rf ~/bin;
+#cd ~/ && rm -rf ~/bin;
 
 # Install repo 
-echo "Installing repo...";
-mkdir ~/bin && curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo;
+#echo "Installing repo...";
+#mkdir ~/bin && curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo;
 
 # Export PATH to include local user bin
-echo "Fixing PATH...";
-sudo echo "export PATH=~/bin:$PATH" >> ~/.bashrc;
+#echo "Fixing PATH...";
+#sudo echo "export PATH=~/bin:$PATH" >> ~/.bashrc;
 
 echo "Done! Hopefully everything works."
 
